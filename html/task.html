@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pequeno Ajudante</title>
+    <link rel="stylesheet" href="/css/task.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="./task.html">Tarefas</a>
+      <a href="./calculator.html">Calculadora</a>
+      <a href="./quizz.html">Quizz</a>
+    </div>
+
+    <div id="div1" class="header">
+      <h1>Lista de Tarefas</h1>
+      <input
+        type="text"
+        name="taskInput"
+        id="taskInput"
+        placeholder="Digite a tarefa aqui..."
+      />
+      <span onclick="newElement()" class="addBtn">Adicionar</span>
+    </div>
+
+    <ul id="taskUL"></ul>
+
+    <script src="../js-scripts/task.js"></script>
+  </body>
+</html>
