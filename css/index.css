@@ -14,6 +14,7 @@ body {
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
+  width: 100vw;
   height: 5vh;
 }
 
@@ -28,29 +29,30 @@ body {
   background-color: rgba(26, 25, 25, 0.8);
 }
 
-.perfil > img {
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 50%;
-  margin: 10px 10px;
-}
-
 .container {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 80vw;
+  height: 100vh;
+  margin-left: 10vw;
+}
+
+.perfil > img {
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 30%;
+  margin: 10px 10px;
 }
 
 .perfil {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10vh;
   padding: 10px;
-  word-wrap: break-word;
-  max-width: 20vw;
-  background-color: #1cddeb18;
+  width: 65vw;
   border-radius: 10%;
   align-content: center;
   justify-content: center;
+  font-size: 1.1rem;
 }
 
 .infoBtn {
@@ -59,33 +61,42 @@ body {
   border-radius: 10px;
   font-weight: bold;
   padding: 5px;
+  box-shadow: 2px 2px 2px #1e8d80;
 }
 
 .infoBtn:hover {
-  background-color: #50eedb;
+  background-color: #6ee7d96e;
   cursor: pointer;
 }
 
 .infoDiv {
-  font-size: 1.1rem;
   display: none;
+  width: 40vw;
 }
 
-p > a {
+.footerAnchor {
   text-decoration: none;
   color: #333;
   margin: 10px;
   padding: 10px;
 }
 
-p > a:hover {
+.footerAnchor:hover {
   background-color: #3896ee;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  align-content: space-around;
+  align-content: center;
   background-color: #54eedc;
-  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  padding: 0;
+}
+
+.contacts {
+  margin: 0;
+  display: flex;
 }

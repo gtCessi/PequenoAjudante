@@ -5,35 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pequeno Ajudante</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" href="img/icon.png" type="image/x-icon" />
-    <script src="js-scripts/index.js" defer></script>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/dice.css" />
+    <script src="/js-scripts/dice.js" defer></script>
   </head>
   <body>
     <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="html/task.html">Tarefas</a>
-      <a href="html/calculator.html">Calculadora</a>
-      <a href="html/quizz.html">Quizz</a>
-      <a href="html/dice.html">Dados</a>
+      <a href="../index.html">Home</a>
+      <a href="./task.html">Tarefas</a>
+      <a href="./calculator.html">Calculadora</a>
+      <a href="./quizz.html">Quizz</a>
+      <a href="./dice.html">Dados</a>
     </div>
+    <h1>Role os dados</h1>
     <div class="container">
-      <div class="perfil">
-        <img src="img/robotHelper.jpg" alt="Foto do Gabriel" />
-        <p>Oi, pessoal. Bem vindxs ao Pequeno Ajudante. =)</p>
-        <button type="button" class="infoBtn">Mais informações</button>
-        <div class="infoDiv">
-          <p>
-            Este projeto tem como objetivo criar algumas funcionalidades do dia
-            a dia. Aos poucos serei atualizado, com o objetivo final de ser um
-            app feito com React Native. Espero que gostem, obrigado pela visita.
-            =)
-          </p>
-        </div>
+      <div class="dice">
+        <button data-dice>D4</button>
+        <button data-dice>D6</button>
+        <button data-dice>D8</button>
+        <button data-dice>D10</button>
+        <button data-dice>D12</button>
+        <button data-dice>D20</button>
+        <button data-dice>D100</button>
+      </div>
+      <div class="result">
+        <p id="d4"></p>
+        <p id="d6"></p>
+        <p id="d8"></p>
+        <p id="d10"></p>
+        <p id="d12"></p>
+        <p id="d20"></p>
+        <p id="d100"></p>
       </div>
     </div>
     <footer class="footer">
-      <div class="madeBy">
+      <div>
         <p>Feito por Cessi</p>
       </div>
       <div class="contacts">

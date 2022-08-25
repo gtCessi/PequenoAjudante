@@ -44,7 +44,7 @@ class Calculator {
 
   /* calcula a operacao matematica 
   Os dados recebidos chegam como string, por isso, se faz necessario
-  trasnforma-los em numero (parseFloat) para prosseguir com o calculo
+  transforma-los em numero (parseFloat) para prosseguir com o calculo
   */
   compute() {
     let computation;
